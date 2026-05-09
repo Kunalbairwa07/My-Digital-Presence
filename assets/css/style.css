@@ -1880,3 +1880,39 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.certificate-filter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.certificate-filter select{
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.portfolio-footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  background: #111;
+}
+
+.portfolio-footer p{
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-footer span{
+  color: #ffdb70;
+  font-weight: 600;
+}

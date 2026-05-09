@@ -23,6 +23,38 @@
 
 </head>
 <div class="modal-container" data-modal-container></div>
+<script>
+
+const filter = document.getElementById("certificateFilter");
+
+const cards = document.querySelectorAll(".blog-post-item");
+
+function filterCertificates() {
+
+  const selected = filter.value;
+
+  cards.forEach(card => {
+
+    const category = card.getAttribute("data-category");
+
+    if(category === selected){
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+
+  });
+
+}
+
+filter.addEventListener("change", filterCertificates);
+
+// Default me Technical show hoga
+filterCertificates();
+
+</script>
+
+
 
 <body>
 
@@ -43,7 +75,7 @@
         <div class="info-content">
 
           <h1 class="name" title="Kunal Bairwa">
-            Kunal Bairwa
+            Er. Kunal Bairwa
           </h1>
 
           <p class="title">Full Stack Developer</p>
@@ -185,7 +217,8 @@
 
           <li class="social-item">
 
-            <a href="https://instagram.com" class="social-link" target="_blank">
+            <a href="https://www.instagram.com/kunalbairwa.official?igsh=ZXlsNmZtdmV2ODhv" class="social-link"
+              target="_blank">
 
               <ion-icon name="logo-instagram"></ion-icon>
 
@@ -350,7 +383,7 @@
 
               <div class="service-icon-box">
 
-                <img src="./assets/images/icon-design.svg" alt="DevOps" width="40">
+                <img src="./assets/images/icon-DevOps.png" alt="DevOps" width="40">
 
               </div>
 
@@ -363,8 +396,8 @@
                 </h4>
 
                 <p class="service-item-text">
-                  Building scalable cloud infrastructure and automating workflows using AWS, Docker, Kubernetes, and
-                  CI/CD pipelines for efficient deployment and monitoring.
+                  Exploring cloud and DevOps technologies like AWS, Docker, Kubernetes, and CI/CD pipelines to build and
+                  automate scalable applications.
                 </p>
 
               </div>
@@ -377,7 +410,7 @@
 
               <div class="service-icon-box">
 
-                <img src="./assets/images/icon-app.svg" alt="Cloud" width="40">
+                <img src="./assets/images/AI&ML.png" alt="Cloud" width="40">
 
               </div>
 
@@ -389,8 +422,8 @@
 
                 <p class="service-item-text">
 
-                  Building intelligent systems using Python, TensorFlow, and scikit-learn, including data analysis,
-                  model training, and predictive solutions.
+                  Exploring machine learning and AI development using Python libraries, with strong enthusiasm for RAG
+                  pipelines and LLM technologies.
 
                 </p>
 
@@ -404,7 +437,7 @@
 
               <div class="service-icon-box">
 
-                <img src="./assets/images/icon-photo.svg" alt="Cybersecurity" width="40">
+                <img src="./assets/images/Teamwork.png" alt="Cybersecurity" width="40">
 
               </div>
 
@@ -447,7 +480,7 @@
 
                 <figure class="testimonials-avatar-box">
 
-                  <img src="./assets/images/avatar-1.png" alt="Smart India Hackathon" width="60"
+                  <img src="./assets/images/SIH-logo.png" alt="Smart India Hackathon" width="60"
                     data-testimonials-avatar>
 
                 </figure>
@@ -485,7 +518,7 @@
 
                 <figure class="testimonials-avatar-box">
 
-                  <img src="./assets/images/avatar-2.png" alt="Hackathons" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/hackathon.png" alt="Hackathons" width="60" data-testimonials-avatar>
 
                 </figure>
 
@@ -522,7 +555,7 @@
 
                 <figure class="testimonials-avatar-box">
 
-                  <img src="./assets/images/avatar-3.png" alt="Events" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/Coordinator.png" alt="Events" width="60" data-testimonials-avatar>
 
                 </figure>
 
@@ -559,7 +592,7 @@
 
                 <figure class="testimonials-avatar-box">
 
-                  <img src="./assets/images/avatar-4.png" alt="Marvel Cart" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/Content-Writer.png" alt="Marvel Cart" width="60" data-testimonials-avatar>
 
                 </figure>
 
@@ -672,7 +705,7 @@
               </h4>
 
               <span>
-                2021 — 2023
+                Year: 2022
               </span>
 
               <p class="timeline-text">
@@ -700,7 +733,7 @@
               </h4>
 
               <span>
-                2019 — 2021
+                Year: 2020
               </span>
 
               <p class="timeline-text">
@@ -765,35 +798,7 @@
               <div class="title-wrapper">
 
                 <h5 class="h5">
-                  DevOps & CI/CD
-                </h5>
-
-                <data value="85">
-                  85%
-                </data>
-
-              </div>
-
-              <div class="skill-progress-bg">
-
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-
-              </div>
-
-            </li>
-
-
-
-
-
-            <!-- CLOUD -->
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-
-                <h5 class="h5">
-                  Cloud & Deployment
+                  DevOps & Cloud
                 </h5>
 
                 <data value="80">
@@ -814,25 +819,53 @@
 
 
 
-            <!-- CYBERSECURITY -->
+            <!-- AI&ML -->
 
             <li class="skills-item">
 
               <div class="title-wrapper">
 
                 <h5 class="h5">
-                  Cybersecurity & AI
+                  AI & ML
                 </h5>
 
-                <data value="75">
-                  75%
+                <data value="70">
+                  70%
                 </data>
 
               </div>
 
               <div class="skill-progress-bg">
 
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+
+              </div>
+
+            </li>
+
+
+
+
+
+            <!-- SOFT SKILLS -->
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+
+                <h5 class="h5">
+                  Soft Skills
+                </h5>
+
+                <data value="95">
+                  95%
+                </data>
+
+              </div>
+
+              <div class="skill-progress-bg">
+
+                <div class="skill-progress-fill" style="width: 95%;"></div>
 
               </div>
 
@@ -852,7 +885,7 @@
         <header>
 
           <h2 class="h2 article-title">
-            Projects
+            MY Projects
           </h2>
 
         </header>
@@ -887,7 +920,7 @@
 
             <li class="filter-item">
               <button data-filter-btn>
-                Healthcare
+                Others
               </button>
             </li>
 
@@ -937,7 +970,7 @@
 
               <li class="select-item">
                 <button data-select-item>
-                  Healthcare
+                  Others
                 </button>
               </li>
 
@@ -957,7 +990,7 @@
 
             <li class="project-item active" data-filter-item data-category="web development">
 
-              <a href="YOUR_LIVE_LINK">
+              <a href="https://kunalbairwa07.github.io/KUNAL_Portfolio/">
 
                 <figure class="project-img">
 
@@ -967,7 +1000,7 @@
 
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="Portfolio Website" loading="lazy">
+                  <img src="./assets/images/Portfolio.png" alt="Portfolio Website" loading="lazy">
 
                 </figure>
 
@@ -989,9 +1022,9 @@
 
             <!-- PROJECT 2 -->
 
-            <li class="project-item active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="AI/ML">
 
-              <a href="YOUR_LIVE_LINK">
+              <a href="https://my-lang-assistant.lovable.app/">
 
                 <figure class="project-img">
 
@@ -1001,16 +1034,16 @@
 
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="Blood Donation" loading="lazy">
+                  <img src="./assets/images/Language Assistant.png" alt="Blood Donation" loading="lazy">
 
                 </figure>
 
                 <h3 class="project-title">
-                  Blood Donation Management
+                  My Language Assistant
                 </h3>
 
                 <p class="project-category">
-                  Full Stack Development
+                  AI/ML (APIs)
                 </p>
 
               </a>
@@ -1025,7 +1058,7 @@
 
             <li class="project-item active" data-filter-item data-category="web development">
 
-              <a href="YOUR_LIVE_LINK">
+              <a href="https://code4-care.vercel.app/">
 
                 <figure class="project-img">
 
@@ -1035,16 +1068,16 @@
 
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="Mini LinkedIn" loading="lazy">
+                  <img src="./assets/images/HAI.png" alt="Mini LinkedIn" loading="lazy">
 
                 </figure>
 
                 <h3 class="project-title">
-                  Mini LinkedIn
+                  HAIs Prediction Dashboard
                 </h3>
 
                 <p class="project-category">
-                  Student Skill Platform
+                  Full Stack / AI&ML
                 </p>
 
               </a>
@@ -1057,9 +1090,9 @@
 
             <!-- PROJECT 4 -->
 
-            <li class="project-item active" data-filter-item data-category="ai/ml">
+            <li class="project-item active" data-filter-item data-category="others">
 
-              <a href="YOUR_LIVE_LINK">
+              <a href="https://wishme-love.vercel.app/">
 
                 <figure class="project-img">
 
@@ -1069,16 +1102,16 @@
 
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="Language Assistant" loading="lazy">
+                  <img src="./assets/images/LoveWish.png" alt="Language Assistant" loading="lazy">
 
                 </figure>
 
                 <h3 class="project-title">
-                  My Language Assistant
+                  WishMe Love
                 </h3>
 
                 <p class="project-category">
-                  AI Application
+                  Lovely Birthday Templete
                 </p>
 
               </a>
@@ -1091,9 +1124,9 @@
 
             <!-- PROJECT 5 -->
 
-            <li class="project-item active" data-filter-item data-category="healthcare">
+            <li class="project-item active" data-filter-item data-category="others">
 
-              <a href="YOUR_LIVE_LINK">
+              <a href="https://kunalbairwa07.github.io/Smart-Irrigation-System/">
 
                 <figure class="project-img">
 
@@ -1103,16 +1136,16 @@
 
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="Healthcare" loading="lazy">
+                  <img src="./assets/images/Smart Irrigation.png" alt="Healthcare" loading="lazy">
 
                 </figure>
 
                 <h3 class="project-title">
-                  Healthcare Interoperability
+                  Smart Irrigation System
                 </h3>
 
                 <p class="project-category">
-                  Healthcare Technology
+                  Software + Hardware Tech
                 </p>
 
               </a>
@@ -1181,19 +1214,33 @@
 
         <!-- CERTIFICATE LIST -->
 
+        <div class="certificate-filter">
+
+          <select id="certificateFilter">
+
+            <option value="Technical">Technical</option>
+            <option value="Non Technical">Non Technical</option>
+            <option value="Subjects">Subjects</option>
+            <option value="Hackathons">Hackathons</option>
+            <option value="Extra">Extra</option>
+
+          </select>
+
+        </div>
+
         <section class="blog-posts">
 
           <ul class="blog-posts-list">
 
             <!-- CERTIFICATE 1 -->
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-category="Technical">
 
-              <a href="https://github.com/Kunalbairwa07/My_Credentials" target="_blank">
+              <a href="https://github.com/Kunalbairwa07/My_Credentials/blob/main/Technical/Cynbit.jpeg" target="_blank">
 
                 <figure class="blog-banner-box">
 
-                  <img src="./assets/images/blog-1.jpg" alt="Full Stack" loading="lazy">
+                  <img src="./assets/images/Certificates/Cynbit.png" alt="Full Stack" loading="lazy">
 
                 </figure>
 
@@ -1207,8 +1254,8 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2024">
-                      2024
+                    <time datetime="2025">
+                      2025
                     </time>
 
                   </div>
@@ -1236,13 +1283,13 @@
 
             <!-- CERTIFICATE 2 -->
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-category="Technical">
 
-              <a href="https://github.com/Kunalbairwa07/My_Credentials" target="_blank">
+              <a href="https://github.com/Kunalbairwa07/My_Credentials/blob/main/Technical/Python.png" target="_blank">
 
                 <figure class="blog-banner-box">
 
-                  <img src="./assets/images/blog-2.jpg" alt="Python" loading="lazy">
+                  <img src="./assets/images/Certificates/Python.png" alt="Python" loading="lazy">
 
                 </figure>
 
@@ -1256,8 +1303,8 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2024">
-                      2024
+                    <time datetime="2026">
+                      2026
                     </time>
 
                   </div>
@@ -1285,13 +1332,13 @@
 
             <!-- CERTIFICATE 3 -->
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-category="Technical">
 
-              <a href="https://github.com/Kunalbairwa07/My_Credentials" target="_blank">
+              <a href="https://github.com/Kunalbairwa07/My_Credentials/blob/main/Technical/Oracle%20DevOps.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
 
-                  <img src="./assets/images/blog-3.jpg" alt="Cybersecurity" loading="lazy">
+                  <img src="./assets/images/Certificates/DevOps.png" alt="Cybersecurity" loading="lazy">
 
                 </figure>
 
@@ -1300,7 +1347,7 @@
                   <div class="blog-meta">
 
                     <p class="blog-category">
-                      Cybersecurity
+                      Technical
                     </p>
 
                     <span class="dot"></span>
@@ -1312,13 +1359,12 @@
                   </div>
 
                   <h3 class="h3 blog-item-title">
-                    Cybersecurity Fundamentals
+                    DevOps By Oracle
                   </h3>
 
                   <p class="blog-text">
 
-                    Certification focused on networking,
-                    cybersecurity and security fundamentals.
+                    Certified in DevOps using Oracle Cloud and CI/CD pipelines.
 
                   </p>
 
@@ -1329,13 +1375,13 @@
             </li>
             <!-- CERTIFICATE 4 -->
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-category="others">
 
-              <a href="https://github.com/Kunalbairwa07/My_Credentials" target="_blank">
+              <a href="https://github.com/Kunalbairwa07/My_Credentials/blob/main/Technical/My%20Learning%20_%20NVIDIA.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
 
-                  <img src="./assets/images/blog-4.jpg" alt="Cloud" loading="lazy">
+                  <img src="./assets/images/Certificates/NVIDIA.png" alt="Cloud" loading="lazy">
 
                 </figure>
 
@@ -1344,25 +1390,24 @@
                   <div class="blog-meta">
 
                     <p class="blog-category">
-                      Cloud & DevOps
+                      Deep Learning
                     </p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2024">
-                      2024
+                    <time datetime="2026">
+                      2026
                     </time>
 
                   </div>
 
                   <h3 class="h3 blog-item-title">
-                    Cloud Computing & DevOps
+                    Fundamental Of Deep Learning
                   </h3>
 
                   <p class="blog-text">
 
-                    Certification covering cloud deployment,
-                    DevOps workflows and automation systems.
+                    NVIDIA certification focused on deep learning, neural networks, and AI basics.
 
                   </p>
 
@@ -1380,11 +1425,11 @@
 
             <li class="blog-post-item">
 
-              <a href="https://github.com/Kunalbairwa07/My_Credentials" target="_blank">
+              <a href="https://github.com/Kunalbairwa07/My_Credentials/blob/main/Seminars%20%26%20Hackathon/Winning%20Moment.jpg" target="_blank">
 
                 <figure class="blog-banner-box">
 
-                  <img src="./assets/images/blog-5.jpg" alt="Hackathon" loading="lazy">
+                  <img src="./assets/images/Certificates/SIH 25 Winner.jpeg" alt="Hackathon" loading="lazy">
 
                 </figure>
 
@@ -1538,6 +1583,14 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
 
   </script>
+
+  <footer class="portfolio-footer">
+
+  <p>
+    © 2026 All Rights Reserved By <span>Er. Kunal Bairwa</span>
+  </p>
+
+</footer>
 
 </body>
 

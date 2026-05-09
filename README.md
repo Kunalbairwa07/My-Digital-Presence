@@ -1,44 +1,88 @@
-# vCard - Personal portfolio
+# 🌐 Personal Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+A modern and responsive personal portfolio website built to showcase my skills, projects, certifications, achievements, and journey as a developer.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+This portfolio reflects my passion for technology, development, AI/ML, cybersecurity, and continuous learning.
 
-## Demo
+---
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## 🚀 Features
 
-## Prerequisites
+- ✨ Modern UI/UX Design
+- 📱 Fully Responsive Layout
+- 👨‍💻 About Me Section
+- 🛠️ Skills Showcase
+- 📂 Projects Section
+- 🏆 Certificates & Achievements
+- 🎯 Category-Based Certificate Filtering
+- 📞 Contact Information
+- 🌙 Professional Dark Theme
+- ⚡ Smooth Animations & Clean Layout
 
-Before you begin, ensure you have met the following requirements:
+---
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## 🛠️ Tech Stack
 
-## Installing vCard
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
 
-To install **vCard**, follow these steps:
+### Tools & Platforms
+- Git
+- GitHub
+- VS Code
 
-Linux and macOS:
+---
+
+## 📂 Sections Included
+
+- Home
+- About
+- Skills
+- Projects
+- Certificates
+- Contact
+
+---
+
+## 📸 Portfolio Highlights
+
+- Full Stack Development
+- AI/ML Learning Journey
+- Cloud & DevOps Exploration
+- Cybersecurity Fundamentals
+- Hackathon Participation
+- Personal Projects Showcase
+
+---
+
+## 🎯 Purpose of This Portfolio
+
+This portfolio was created to:
+
+- Showcase my technical skills
+- Highlight projects and certifications
+- Build my professional online presence
+- Share my learning journey and achievements
+
+---
+
+## 🚀 Future Improvements
+
+- Add backend integration
+- Add blog section
+- Add dynamic project management
+- Add animations and advanced UI effects
+- Deploy with custom domain
+
+---
+
+## 🔗 Live Demo
+
+Add your deployed portfolio link here.
+
+Example:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
-
-## License
-
-MIT
+https://your-portfolio-link.com
