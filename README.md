@@ -80,9 +80,4 @@ This portfolio was created to:
 
 ## 🔗 Live Demo
 
-Add your deployed portfolio link here.
-
-Example:
-
-```bash
-https://your-portfolio-link.com
+https://my-digital-presence-portfolio.vercel.app/ 
